@@ -1,8 +1,6 @@
 version: '3'
 services:
   ami_connector:
-    image: foton831/ami_connector:1.0
+    image: foton831/ami_connector:1.7
     build:
       context: .
-    ports:
-      - 5000:5000

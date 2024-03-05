@@ -5,4 +5,4 @@ RUN apt-get update && \
     apt-get upgrade -y
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r requirements.txt
-CMD ["python", "event_listener.py"]
+CMD ["python", "app.py"]
