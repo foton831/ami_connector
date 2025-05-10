@@ -8,6 +8,7 @@ class EnviromentVariables:
     _AMI_PORT = os.environ.get('AMI_PORT')
     _AMI_USERNAME = os.environ.get('AMI_USERNAME')
     _AMI_SECRET = os.environ.get('AMI_SECRET')
+    _ELMA_WEBHOOK_URL = os.environ.get('ELMA_WEBHOOK_URL')
 
     @classmethod
     def get_ami_host(cls):
@@ -24,3 +25,7 @@ class EnviromentVariables:
     @classmethod
     def get_ami_secret(cls):
         return cls._AMI_SECRET
+
+    @classmethod
+    def get_elma_weebhook_url(cls):
+        return cls._ELMA_WEBHOOK_URL

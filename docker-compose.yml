@@ -1,6 +1,12 @@
 version: '3'
 services:
   ami_connector:
-    image: foton831/ami_connector:1.7
+    image: foton831/ami_connector:1.11
+    environment:
+      - AMI_HOST=192.168.0.103
+      - AMI_PORT=5038
+      - AMI_USERNAME=elma365
+      - AMI_SECRET=AqouSg
+      - ELMA_WEBHOOK_URL=https://elma-dev.flyer-online.ru/api/integrations/webhook/voip/extension/7447b7c5-5380-4d41-9b31-6daea41ecdaa?token=e1683dd6-17ee-4612-91fa-63d1f5c246af
     build:
       context: .
